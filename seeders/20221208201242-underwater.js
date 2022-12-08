@@ -15,7 +15,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcaliforniathroughmylens.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fpainted-cave-santa-cruz-island-7.jpg&f=1&nofb=1&ipt=b020fa23004c47d7d7e71183951284b985d739aec3e2b3b83ff802e67c68d353&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.iiCLsqKOOT1NxYzg3_E73AHaK-%26pid%3DApi&f=1&ipt=2acaba4a463b7785b3e4d4a98fd55b66049af6bedd4c92135e8791ea04587b11&ipo=images',
-        countryId: 1
+        countryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: "The Devil's Spring System",
@@ -28,7 +30,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.divebuddy.com%2Fmembers%2F1%2Fpic_25417_95130.jpg&f=1&nofb=1&ipt=8b562164cafb1ef5600af0f96e32090bb05de87fd9158c246cc46467fb7ae389&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.assets.thediscoverer.com%2F2019%2F10%2FGinnie-Springs-Florida.jpg&f=1&nofb=1&ipt=3cf812f42ef8cc791db942a174a951830c05903b6f55a8b9318676daa901a35c&ipo=images',
-        countryId: 1
+        countryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: "Jacob's Well",
@@ -41,7 +45,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.beyonddivingscuba.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fcenotes-warning-sign.jpg&f=1&nofb=1&ipt=a3e78b638b1102b251cb1575acb7e53f2d8cfe12bd7444aac880678b39993865&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.smtxphotos.com%2Fwp-content%2Fuploads%2F2015%2F09%2FJacobs-Well-at-Night-Wimberley-TX.jpg&f=1&nofb=1&ipt=9b0d5b59f9a5f1ecec8d27db2e2d0886ebf14129f9b704e0b22580389337c4d3&ipo=images',
-        countryId: 1
+        countryId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Cenote Chac Mool',
@@ -54,7 +60,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvisitroo.com%2Fimg%2Fmx%2Fe%2F1420562756-14-Cenote_Chac_Mool.jpg&f=1&nofb=1&ipt=5ced82a150f093f5ed5f2e308b077b6e65952a24965aea64d58198239da73daf&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.diversunderground.com%2Fwp-content%2Fuploads%2F2021%2F07%2FCenote-Chac-Mool-Wildlife.jpg&f=1&nofb=1&ipt=da2be31eec99263cf9a0bcce53d8785e04ddc572813fb861090d1b4a6bfa4758&ipo=images',
-        countryId: 2
+        countryId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Cenote Dos Ojos',
@@ -67,7 +75,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rd.com%2Fwp-content%2Fuploads%2F2020%2F04%2FGettyImages-872214828.jpg&f=1&nofb=1&ipt=2f538cee8080e9561eb847b4f4c665b1270d0021e8ed113db3dd4b4ba64b3aaf&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.trytn.site%2Fstpcaribe%2F2017%2F10%2FDos-Ojos-Cenote-Tour.jpg&f=1&nofb=1&ipt=5628dc538b1ae2ec45531b573e630e4b41a15b68ce0bdad4cab1c77719c5a93e&ipo=images',
-        countryId: 2
+        countryId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Cenote Taj Mahal',
@@ -80,7 +90,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fc1%2F34%2Fa3%2Fc134a35bfe310ea0e33888e0de11a73d.jpg&f=1&nofb=1&ipt=d8dbaa994ad5f086d4004afb957713dde8fc5a27a262366e83f9436c9ed55dd1&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.mexicodestinos.com%2Ftours%2FBuceo-Cenote-Taj-Mahal.jpg&f=1&nofb=1&ipt=d62cf20e9a165bd0fb5b65a22f7e48e5c371357036695012bc8316a65c9bd75d&ipo=images',
-        countryId: 2
+        countryId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Cenote Zapote',
@@ -93,7 +105,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmenteurbana.mx%2Fwp-content%2Fuploads%2F2017%2F04%2Fstock-photo-100226431.jpg&f=1&nofb=1&ipt=b17583909106a68a1e9223c3e54d58d787f07951367caef4ec55fc948f9d0b0c&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1Fb6nlNs1xk7OtOsNJ9ksgHaGF%26pid%3DApi&f=1&ipt=53bcdc2b34ada8b8d421f73890de928a4aad286b8d7196b53b145a8a56da4ceb&ipo=images',
-        countryId: 2
+        countryId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Turtle Cavern and Turtle Tomb',
@@ -106,7 +120,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fseaventuresdive.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fsipadan-turtle-tomb-seaventures.jpg&f=1&nofb=1&ipt=e61f21ca1d7ab1c7f1994f714f67f167a60136c10dd8b4e5b8a80764d8028d3b&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.asiadivingvacation.com%2Fimages%2Fdiving%2Fsipadan-island%2Fgallery%2Fturtle-tomb-entrance.jpg&f=1&nofb=1&ipt=73efb186647c12c996a0f22226713981f0b34da0d5bdfb6c10b29ca272ef6d64&ipo=images',
-        countryId: 6
+        countryId: 6,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Paglugaban Cave',
@@ -119,7 +135,9 @@ module.exports = {
           'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.divephotoguide.com%2Fimages%2Flightboximage%2Fm%2F1568586512.jpg&f=1&nofb=1&ipt=002dd7154d72c272ec70e879d5a417572e39c6370d3124a2b5d9a7cd0bac9300&ipo=images',
         imageThree:
           'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.divephotoguide.com%2Fimages%2Flightboximage%2Forig%2F1568586738.jpg&f=1&nofb=1&ipt=53262c2c03c18259105d0ccc6f7fb3f10aba5d6b7da7cc1ef19faec036b92644&ipo=images',
-        countryId: 7
+        countryId: 7,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ])
   },
