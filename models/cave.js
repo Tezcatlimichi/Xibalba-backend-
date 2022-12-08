@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Cave.belongsTo(models.Countries, {
+        as: 'country',
+        foreignKey: 'countryId'
+      })
     }
   }
   Cave.init(
@@ -18,7 +21,16 @@ module.exports = (sequelize, DataTypes) => {
       details: DataTypes.TEXT,
       imageOne: DataTypes.TEXT,
       imageTwo: DataTypes.TEXT,
-      imageThree: DataTypes.TEXT
+      imageThree: DataTypes.TEXT,
+      CountryId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'countries',
+          key: 'id'
+        }
+      }
     },
     {
       sequelize,
