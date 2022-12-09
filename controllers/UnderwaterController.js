@@ -9,15 +9,15 @@ const GetUnderwaterCaves = async (req, res) => {
   }
 }
 
-// const GetOneUnderwaterCave = async (req, res) => {
-//   try {
-//     let underwaterId = parseInt(req.params.id)
-//     const singleCave = await Underwater.findOne({ where: { id: underwaterId } })
-//     res.send(singleCave)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const GetOneUnderwaterCave = async (req, res) => {
+  try {
+    let underwaterId = parseInt(req.params.id)
+    const singleCave = await Underwater.findOne({ where: { id: underwaterId } })
+    res.send(singleCave)
+  } catch (error) {
+    throw error
+  }
+}
 // //Create
 // const NewUnderwaterCave = async (req, res) => {
 //   try {
@@ -57,8 +57,8 @@ const GetUnderwaterCaves = async (req, res) => {
 // }
 
 module.exports = {
-  GetUnderwaterCaves
-  // GetOneUnderwaterCave,
+  GetUnderwaterCaves,
+  GetOneUnderwaterCave
   // NewUnderwaterCave,
   // UpdateUnderwaterCave,
   // DeleteUnderwaterCave
