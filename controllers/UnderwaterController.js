@@ -18,18 +18,18 @@ const GetOneUnderwaterCave = async (req, res) => {
     throw error
   }
 }
-// //Create
-// const NewUnderwaterCave = async (req, res) => {
-//   try {
-//     let data = {
-//       ...req.body
-//     }
-//     let cave = await Underwater.create(data)
-//     res.send(cave)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+//Create
+const NewUnderwaterCave = async (req, res) => {
+  try {
+    let data = {
+      ...req.body
+    }
+    let cave = await Underwater.create(data)
+    res.send(cave)
+  } catch (error) {
+    throw error
+  }
+}
 // //update
 // const UpdateUnderwaterCave = async (req, res) => {
 //   try {
