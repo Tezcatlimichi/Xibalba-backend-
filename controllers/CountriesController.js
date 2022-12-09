@@ -9,15 +9,15 @@ const GetCountries = async (req, res) => {
   }
 }
 
-// const GetSingleCountry = async (req, res) => {
-//   try {
-//     let countryId = parseInt(req.params.id)
-//     const country = await Countries.findOne({ where: { id: countryId } })
-//     res.send(country)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const GetSingleCountry = async (req, res) => {
+  try {
+    let countryId = parseInt(req.params.id)
+    const country = await Countries.findOne({ where: { id: countryId } })
+    res.send(country)
+  } catch (error) {
+    throw error
+  }
+}
 // const DeleteCountry = async (req, res) => {
 //   try {
 //     await Countries.destroy({ where: { id: req.params.id } })
@@ -30,7 +30,7 @@ const GetCountries = async (req, res) => {
 // }
 
 module.exports = {
-  GetCountries
-  // GetSingleCountry,
+  GetCountries,
+  GetSingleCountry
   // DeleteCountry
 }
