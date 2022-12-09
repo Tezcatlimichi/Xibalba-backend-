@@ -9,15 +9,15 @@ const GetFuana = async (req, res) => {
   }
 }
 
-// const SingleFuana = async (req, res) => {
-//   try {
-//     let fuanaId = parseInt(req.params.id)
-//     const single = await Fuana.findOne({ where: { id: fuanaId } })
-//     res.send(single)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const SingleFuana = async (req, res) => {
+  try {
+    let fuanaId = parseInt(req.params.id)
+    const single = await Fuana.findOne({ where: { id: fuanaId } })
+    res.send(single)
+  } catch (error) {
+    throw error
+  }
+}
 // const DeleteFuana = async (req, res) => {
 //   try {
 //     await Fuana.destroy({ where: { id: req.params.id } })
@@ -30,7 +30,7 @@ const GetFuana = async (req, res) => {
 // }
 
 module.exports = {
-  GetFuana
-  //   SingleFuana,
+  GetFuana,
+  SingleFuana
   //   DeleteFuana
 }
