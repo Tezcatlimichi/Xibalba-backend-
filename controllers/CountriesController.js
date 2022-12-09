@@ -18,19 +18,19 @@ const GetSingleCountry = async (req, res) => {
     throw error
   }
 }
-// const DeleteCountry = async (req, res) => {
-//   try {
-//     await Countries.destroy({ where: { id: req.params.id } })
-//     res.send({
-//       message: `Country has been successfully deleted`
-//     })
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const DeleteCountry = async (req, res) => {
+  try {
+    await Countries.destroy({ where: { id: req.params.id } })
+    res.send({
+      message: `Country has been successfully deleted`
+    })
+  } catch (error) {
+    throw error
+  }
+}
 
 module.exports = {
   GetCountries,
-  GetSingleCountry
-  // DeleteCountry
+  GetSingleCountry,
+  DeleteCountry
 }
