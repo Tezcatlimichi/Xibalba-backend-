@@ -5,5 +5,5 @@ Router.get('/', controller.GetUnderwaterCaves)
 Router.get('/:id', controller.GetOneUnderwaterCave)
 Router.post('/', controller.NewUnderwaterCave)
 Router.put('/:id', controller.UpdateUnderwaterCave)
-// Router.delete('/:id', controller.DeleteUnderwaterCave)
+Router.delete('/:id', controller.DeleteUnderwaterCave)
 module.exports = Router

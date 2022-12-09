@@ -44,22 +44,22 @@ const UpdateUnderwaterCave = async (req, res) => {
   }
 }
 
-// //delete
-// const DeleteUnderwaterCave = async (req, res) => {
-//   try {
-//     await Underwater.destroy({ where: { id: req.params.id } })
-//     res.send({
-//       message: `Cave has been successfully deleted`
-//     })
-//   } catch (error) {
-//     throw error
-//   }
-// }
+//delete
+const DeleteUnderwaterCave = async (req, res) => {
+  try {
+    await Underwater.destroy({ where: { id: req.params.id } })
+    res.send({
+      message: `Cave has been successfully deleted`
+    })
+  } catch (error) {
+    throw error
+  }
+}
 
 module.exports = {
   GetUnderwaterCaves,
-  GetOneUnderwaterCave
-  // NewUnderwaterCave,
-  // UpdateUnderwaterCave,
-  // DeleteUnderwaterCave
+  GetOneUnderwaterCave,
+  NewUnderwaterCave,
+  UpdateUnderwaterCave,
+  DeleteUnderwaterCave
 }
