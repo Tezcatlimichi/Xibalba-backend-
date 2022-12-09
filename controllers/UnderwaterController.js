@@ -1,13 +1,13 @@
-// const { Underwater } = require('../models')
+const { Underwater } = require('../models')
 
-// const GetUnderwaterCaves = async (req, res) => {
-//   try {
-//     const underwaterCaves = await Underwater.findAll()
-//     res.send(underwaterCaves)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const GetUnderwaterCaves = async (req, res) => {
+  try {
+    const underwaterCaves = await Underwater.findAll()
+    res.send(underwaterCaves)
+  } catch (error) {
+    throw error
+  }
+}
 
 // const GetOneUnderwaterCave = async (req, res) => {
 //   try {
@@ -56,10 +56,10 @@
 //   }
 // }
 
-// module.exports = {
-//   GetUnderwaterCaves,
-//   GetOneUnderwaterCave,
-//   NewUnderwaterCave,
-//   UpdateUnderwaterCave,
-//   DeleteUnderwaterCave
-// }
+module.exports = {
+  GetUnderwaterCaves
+  // GetOneUnderwaterCave,
+  // NewUnderwaterCave,
+  // UpdateUnderwaterCave,
+  // DeleteUnderwaterCave
+}
