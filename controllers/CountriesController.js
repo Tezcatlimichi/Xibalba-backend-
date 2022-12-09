@@ -1,13 +1,13 @@
-// const { Countries } = require('../models')
+const { Countries } = require('../models')
 
-// const GetCountries = async (req, res) => {
-//   try {
-//     const countries = await Countries.findAll()
-//     res.send(countries)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+const GetCountries = async (req, res) => {
+  try {
+    const countries = await Countries.findAll()
+    res.send(countries)
+  } catch (error) {
+    throw error
+  }
+}
 
 // const GetSingleCountry = async (req, res) => {
 //   try {
@@ -29,8 +29,8 @@
 //   }
 // }
 
-// module.exports = {
-//   GetCountries,
-//   GetSingleCountry,
-//   DeleteCountry
-// }
+module.exports = {
+  GetCountries
+  // GetSingleCountry,
+  // DeleteCountry
+}
