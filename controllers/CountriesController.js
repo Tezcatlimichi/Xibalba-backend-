@@ -1,4 +1,20 @@
 const { Countries } = require('../models')
+const { Cave } = require('../models')
+const { Underwater } = require('../models')
+
+///...
+const CavesInCountry = async (req, res) => {
+  try {
+    let countryId = parseInt(req.params.id)
+    const caves = await Countries.findAll({
+      where: { id: countryId },
+      include: [Underwater, Cave]
+    })
+    res.send(...caves)
+  } catch (error) {
+    throw error
+  }
+}
 
 const GetCountries = async (req, res) => {
   try {
@@ -9,15 +25,6 @@ const GetCountries = async (req, res) => {
   }
 }
 
-const GetSingleCountry = async (req, res) => {
-  try {
-    let countryId = parseInt(req.params.id)
-    const country = await Countries.findOne({ where: { id: countryId } })
-    res.send(country)
-  } catch (error) {
-    throw error
-  }
-}
 const DeleteCountry = async (req, res) => {
   try {
     await Countries.destroy({ where: { id: req.params.id } })
@@ -31,6 +38,6 @@ const DeleteCountry = async (req, res) => {
 
 module.exports = {
   GetCountries,
-  GetSingleCountry,
-  DeleteCountry
+  DeleteCountry,
+  CavesInCountry
 }
