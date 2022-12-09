@@ -30,19 +30,19 @@ const NewUnderwaterCave = async (req, res) => {
     throw error
   }
 }
-// //update
-// const UpdateUnderwaterCave = async (req, res) => {
-//   try {
-//     let caveId = parseInt(req.params.id)
-//     const updated = await Underwater.update(req.body, {
-//       where: { id: caveId },
-//       returning: true
-//     })
-//     res.send(updated)
-//   } catch (error) {
-//     throw error
-//   }
-// }
+//update
+const UpdateUnderwaterCave = async (req, res) => {
+  try {
+    let caveId = parseInt(req.params.id)
+    const updated = await Underwater.update(req.body, {
+      where: { id: caveId },
+      returning: true
+    })
+    res.send(updated)
+  } catch (error) {
+    throw error
+  }
+}
 
 // //delete
 // const DeleteUnderwaterCave = async (req, res) => {
