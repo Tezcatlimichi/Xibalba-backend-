@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       imageOne: DataTypes.TEXT,
       imageTwo: DataTypes.TEXT,
       imageThree: DataTypes.TEXT,
-      CountryId: {
+      countryId: {
         type: DataTypes.INTEGER,
         allowNull: false,
         onDelete: 'CASCADE',
