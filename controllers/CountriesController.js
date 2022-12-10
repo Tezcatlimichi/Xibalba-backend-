@@ -21,6 +21,25 @@ const GetCaveInCountry = async (req, res) => {
   }
 }
 
+const GetUnderwaterCaveInCountry = async (req, res) => {
+  try {
+    let countryId = parseInt(req.params.id)
+    let caveId = parseInt(req.params.caveId)
+    const cave = await Countries.findOne({
+      where: { id: countryId },
+      include: [
+        {
+          model: Underwater,
+          where: { id: caveId }
+        }
+      ]
+    })
+    res.send(cave)
+  } catch (error) {
+    throw error
+  }
+}
+
 ///...
 const CavesInCountry = async (req, res) => {
   try {
@@ -59,5 +78,6 @@ module.exports = {
   GetCountries,
   DeleteCountry,
   CavesInCountry,
-  GetCaveInCountry
+  GetCaveInCountry,
+  GetUnderwaterCaveInCountry
 }
