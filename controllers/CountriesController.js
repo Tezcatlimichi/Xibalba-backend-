@@ -2,6 +2,25 @@ const { Countries } = require('../models')
 const { Cave } = require('../models')
 const { Underwater } = require('../models')
 
+const GetCaveInCountry = async (req, res) => {
+  try {
+    let countryId = parseInt(req.params.id)
+    let caveId = parseInt(req.params.caveId)
+    const cave = await Countries.findOne({
+      where: { id: countryId },
+      include: [
+        {
+          model: Cave,
+          where: { id: caveId }
+        }
+      ]
+    })
+    res.send(cave)
+  } catch (error) {
+    throw error
+  }
+}
+
 ///...
 const CavesInCountry = async (req, res) => {
   try {
@@ -39,5 +58,6 @@ const DeleteCountry = async (req, res) => {
 module.exports = {
   GetCountries,
   DeleteCountry,
-  CavesInCountry
+  CavesInCountry,
+  GetCaveInCountry
 }
