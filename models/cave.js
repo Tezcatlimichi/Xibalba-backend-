@@ -30,7 +30,8 @@ module.exports = (sequelize, DataTypes) => {
           model: 'countries',
           key: 'id'
         }
-      }
+      },
+      profileId: DataTypes.INTEGER
     },
     {
       sequelize,
