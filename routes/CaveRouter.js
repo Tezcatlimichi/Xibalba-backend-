@@ -6,5 +6,5 @@ Router.get('/:id', controller.GetOneCave)
 Router.post('/', controller.NewCave)
 Router.put('/:id', controller.UpdateCave)
 Router.delete('/:id', controller.DeleteCave)
-
+Router.get('/profile/:id', controller.CavesInProfile)
 module.exports = Router

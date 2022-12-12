@@ -1,5 +1,17 @@
 const { Cave } = require('../models')
 
+const CavesInProfile = async (req, res) => {
+  try {
+    let id = parseInt(req.params.id)
+    const allCaves = await Cave.findAll({
+      where: { profileId: id }
+    })
+    res.send(allCaves)
+  } catch (error) {
+    throw error
+  }
+}
+
 //read
 const GetCaves = async (req, res) => {
   try {
@@ -62,5 +74,6 @@ module.exports = {
   GetOneCave,
   NewCave,
   UpdateCave,
-  DeleteCave
+  DeleteCave,
+  CavesInProfile
 }
