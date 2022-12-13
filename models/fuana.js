@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
       whoTheyAre: DataTypes.TEXT,
       whereToFind: DataTypes.TEXT,
       protect: DataTypes.TEXT,
-      year: DataTypes.STRING
+      year: DataTypes.STRING,
+      drawing: DataTypes.TEXT
     },
     {
       sequelize,
