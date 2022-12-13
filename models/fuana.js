@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
       image: DataTypes.TEXT,
       whoTheyAre: DataTypes.TEXT,
       whereToFind: DataTypes.TEXT,
-      protect: DataTypes.TEXT
+      protect: DataTypes.TEXT,
+      year: DataTypes.STRING
     },
     {
       sequelize,
