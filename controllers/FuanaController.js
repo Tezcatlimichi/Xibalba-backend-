@@ -1,5 +1,18 @@
 const { Fuana } = require('../models')
 
+const UpdateFuana = async (req, res) => {
+  try {
+    let fuanaId = parseInt(req.params.id)
+    const updated = await Fuana.update(req.body, {
+      where: { id: fuanaId },
+      returning: true
+    })
+    res.send(updated)
+  } catch (error) {
+    throw error
+  }
+}
+
 const GetFuana = async (req, res) => {
   try {
     const fuana = await Fuana.findAll()
@@ -32,5 +45,6 @@ const DeleteFuana = async (req, res) => {
 module.exports = {
   GetFuana,
   SingleFuana,
-  DeleteFuana
+  DeleteFuana,
+  UpdateFuana
 }
